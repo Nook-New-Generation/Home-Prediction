@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nook Property - House Prediction</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-brand">
+          <img src="logo.png" alt="Logo" class="logo" />
+          <h4>Nook Property - House Prediction</h4>
+        </a>
+      </div>
+    </nav>
+
+    <div class="background-container">
+      <!-- Card Form -->
+      <div class="form-card">
+        <form>
+          <!-- Horizontal Form Layout -->
+          <div class="form-group">
+            <div>
+              <label for="square-feet">Square Feet</label>
+              <input
+                type="text"
+                id="square-feet"
+                placeholder="Ex : 2126"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="bedrooms">Number of Bedrooms</label>
+              <input type="text" id="bedrooms" placeholder="Ex : 4" required />
+            </div>
+
+            <div>
+              <label for="bathrooms">Number of Bathrooms</label>
+              <input type="text" id="bathrooms" placeholder="Ex : 1" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div>
+              <label for="neighborhood">Neighborhood</label>
+              <select id="neighborhood">
+                <option value="">--Select Neighborhood--</option>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="rural">Rural</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="year-built">Year Built</label>
+              <input type="date" id="year-built" />
+            </div>
+          </div>
+
+          <button type="submit" class="predict-btn">Predict</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
